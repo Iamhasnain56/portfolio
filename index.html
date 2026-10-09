@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Hasnain | Portfolio - 8th Grade Student & Academic Topper</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Muhammad Hasnain | Portfolio - 8th Grade Student & Academic Topper">
+  <meta name="description" content="Official personal portfolio of Muhammad Hasnain, 14-year-old 8th Class student at KIPS School, academic topper, Cricket enthusiast, and mountain explorer.">
+  <meta name="keywords" content="Muhammad Hasnain, Hasnain Portfolio, KIPS School, 8th Grade Student, Academic Topper, Cricket, Photography">
+  <meta name="author" content="Muhammad Hasnain">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-dark text-light overflow-x-hidden select-none-text">
+
+  <!-- Custom Glowing Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Ambient Sound Toggle & Theme Audio -->
+  <button id="soundToggle" class="sound-toggle-btn" aria-label="Toggle Sound Effects" title="Toggle Sound Effects">
+    <i class="fa-solid fa-volume-xmark"></i>
+    <span class="sound-label">SFX OFF</span>
+  </button>
+
+  <!-- Interactive Background Canvas (Stars, Particles & Cyber Grid) -->
+  <canvas id="cyberCanvas" class="fixed-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-badge">MH</span>
+        <span class="logo-text">HASNAIN<span class="highlight-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-item active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about" class="nav-item"><i class="fa-solid fa-user"></i> About</a></li>
+        <li><a href="#life" class="nav-item"><i class="fa-solid fa-camera-retro"></i> Life & Moments</a></li>
+        <li><a href="#skills" class="nav-item"><i class="fa-solid fa-trophy"></i> Strengths</a></li>
+        <li><a href="#activities" class="nav-item"><i class="fa-solid fa-baseball-bat-ball"></i> Activities</a></li>
+        <li><a href="#journey" class="nav-item"><i class="fa-solid fa-graduation-cap"></i> Journey</a></li>
+        <li><a href="#contact" class="nav-item"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-primary-glow btn-sm">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        
+        <!-- Hero Left Info -->
+        <div class="hero-content" data-reveal="fade-right">
+          
+          <!-- Live Status Badge -->
+          <div class="status-pill">
+            <span class="status-indicator">
+              <span class="ping"></span>
+              <span class="dot"></span>
+            </span>
+            <span class="status-text">Student @ <strong>KIPS School</strong> • 8th Grade</span>
+          </div>
+
+          <!-- Main Greeting & Name -->
+          <div class="name-container">
+            <span class="hero-subtitle">Assalam-o-Alaikum, I am</span>
+            <h1 class="hero-title">
+              <span class="name-gradient">MUHAMMAD</span>
+              <span class="name-gradient name-last">HASNAIN</span>
+            </h1>
+          </div>
+
+          <!-- Dynamic Animated Typing Text -->
+          <div class="typewriter-box">
+            <span class="typewriter-prefix">I am an </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <!-- Hero Description -->
+          <p class="hero-description">
+            A <strong>14-year-old</strong> ambitious student currently studying in <strong>8th Class at KIPS School</strong>. Driven by academic excellence, passion for <strong>Cricket</strong>, photography, exploring nature, and co-curricular achievements.
+          </p>
+
+          <!-- Quick Stat Badges -->
+          <div class="quick-stats-grid">
+            <div class="stat-pill">
+              <i class="fa-solid fa-school text-cyan"></i>
+              <div>
+                <span class="stat-label">School</span>
+                <span class="stat-val">KIPS School</span>
+              </div>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-book-open-reader text-blue"></i>
+              <div>
+                <span class="stat-label">Class</span>
+                <span class="stat-val">8th Grade</span>
+              </div>
+            </div>
+            <div class="stat-pill">
+              <i class="fa-solid fa-baseball-bat-ball text-green"></i>
+              <div>
+                <span class="stat-label">Fav Sport</span>
+                <span class="stat-val">Cricket 🏏</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#journey" class="btn-primary-glow">
+              <span>My Academic Journey</span>
+              <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <a href="#contact" class="btn-secondary-glass">
+              <span>Contact Me</span>
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- Social Links & Direct WhatsApp -->
+          <div class="hero-socials">
+            <span class="social-title">Connect with me:</span>
+            <div class="social-icons-wrapper">
+              <a href="https://wa.me/923359065274" target="_blank" rel="noopener" class="social-btn-whatsapp" title="Chat on WhatsApp (+92 335 9065274)">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>+92 335 9065274</span>
+              </a>
+              <a href="mailto:hasnainkkt39@gmail.com" class="social-icon" title="Email: hasnainkkt39@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://github.com/Iamhasnain56" target="_blank" rel="noopener" class="social-icon" title="GitHub: Iamhasnain56">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hero Right 3D Interactive Card / Photo -->
+        <div class="hero-visual" data-reveal="fade-left">
+          <div class="photo-card-tilt" id="photoTiltCard">
+            
+            <!-- Animated Glowing Outer Ring -->
+            <div class="card-glow-aura"></div>
+            
+            <!-- Main Photo Wrapper -->
+            <div class="photo-wrapper">
+              <img src="assets/profile.jpeg" alt="Muhammad Hasnain" class="profile-img" id="heroProfileImg">
+              <div class="photo-overlay"></div>
+              
+              <!-- Scanline Cyber Effect -->
+              <div class="cyber-scanline"></div>
+            </div>
+
+            <!-- Single Floating Badge: KIPS School 8th Class -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon"><i class="fa-solid fa-crown text-gold"></i></div>
+              <div class="badge-content">
+                <span class="badge-title">KIPS School</span>
+                <span class="badge-subtitle">8th Class Student</span>
+              </div>
+            </div>
+
+            <!-- Hologram Corner Accents -->
+            <div class="corner-bracket top-left"></div>
+            <div class="corner-bracket top-right"></div>
+            <div class="corner-bracket bottom-left"></div>
+            <div class="corner-bracket bottom-right"></div>
+          </div>
+
+          <!-- Hero Photo Selector Thumbs -->
+          <div class="hero-photo-selector" title="Switch Hero Photo View">
+            <div class="selector-thumb active" onclick="switchHeroPhoto('assets/profile.jpeg', this)" title="Main Profile">
+              <img src="assets/profile.jpeg" alt="Profile Main">
+            </div>
+            <div class="selector-thumb" onclick="switchHeroPhoto('assets/secondProfileImage.jpeg', this)" title="Second Profile">
+              <img src="assets/secondProfileImage.jpeg" alt="Profile Second">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Section">
+        <span class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">SCROLL TO DISCOVER</span>
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag"><i class="fa-solid fa-user"></i> ABOUT ME</div>
+          <h2 class="section-title">Driven by Curiosity, <span class="text-gradient">Powered by Code</span></h2>
+          <p class="section-subtitle">Get to know the student behind the screen, my educational background, and what inspires me every day.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Main Bio Card -->
+          <div class="glass-card bio-card" data-reveal="fade-right">
+            <div class="bio-header">
+              <div class="bio-avatar-mini">
+                <img src="assets/profile.jpeg" alt="Muhammad Hasnain Mini">
+              </div>
+              <div>
+                <h3 class="bio-name">Muhammad Hasnain</h3>
+                <span class="bio-role">Student • 8th Class • KIPS School</span>
+              </div>
+            </div>
+
+            <p class="bio-paragraph">
+              Hello! I am <strong>Muhammad Hasnain</strong>, a 14-year-old student studying in the <strong>8th Grade at KIPS School</strong>. I take immense pride in academic excellence, having achieved 1st position and top class topper honors throughout primary and middle school.
+            </p>
+            <p class="bio-paragraph">
+              When I am not studying my school syllabus or scoring top grades in science and mathematics, I spend my time actively participating in co-curricular activities, playing <strong>Cricket</strong> (my favorite sport), capturing nature through <strong>Photography</strong>, and watching my favorite content creator <strong>Khazar Umar</strong>!
+            </p>
+
+            <!-- Key Info List -->
+            <div class="info-list-grid">
+              <div class="info-item">
+                <span class="info-key"><i class="fa-solid fa-user-tag text-cyan"></i> Full Name:</span>
+                <span class="info-val">Muhammad Hasnain</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key"><i class="fa-solid fa-cake-candles text-purple"></i> Age:</span>
+                <span class="info-val">14 Years Old</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key"><i class="fa-solid fa-venus-mars text-blue"></i> Gender:</span>
+                <span class="info-val">Male</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key"><i class="fa-solid fa-school-flag text-green"></i> School:</span>
+                <span class="info-val">KIPS School</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key"><i class="fa-solid fa-graduation-cap text-gold"></i> Current Grade:</span>
+                <span class="info-val">8th Standard</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key"><i class="fa-solid fa-baseball-bat-ball text-red"></i> Fav Sport:</span>
+                <span class="info-val">Cricket 🏏</span>
+              </div>
+            </div>
+
+            <div class="bio-footer">
+              <a href="#journey" class="btn-text-link">
+                <span>View My Academic Achievements & Roadmap</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Interactive Highlights & Counter Boxes -->
+          <div class="about-highlights" data-reveal="fade-left">
+            
+            <div class="counters-row">
+              <div class="glass-card counter-card">
+                <div class="counter-icon"><i class="fa-solid fa-sparkles text-cyan"></i></div>
+                <div class="counter-number" data-target="14">14</div>
+                <div class="counter-label">Years of Age</div>
+              </div>
+              <div class="glass-card counter-card">
+                <div class="counter-icon"><i class="fa-solid fa-award text-gold"></i></div>
+                <div class="counter-number" data-target="8">8th</div>
+                <div class="counter-label">Grade @ KIPS</div>
+              </div>
+              <div class="glass-card counter-card">
+                <div class="counter-icon"><i class="fa-solid fa-crown text-purple"></i></div>
+                <div class="counter-number" data-target="7">7+</div>
+                <div class="counter-label">Years Class Topper</div>
+              </div>
+              <div class="glass-card counter-card">
+                <div class="counter-icon"><i class="fa-solid fa-fire text-red"></i></div>
+                <div class="counter-number" data-target="100">100%</div>
+                <div class="counter-label">Dedication</div>
+              </div>
+            </div>
+
+            <!-- Value Pillars -->
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-trophy text-gold"></i></div>
+              <div class="pillar-content">
+                <h4>Academic Excellence</h4>
+                <p>1st Position Holder in primary & middle school, maintaining top distinction at KIPS School.</p>
+              </div>
+            </div>
+
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-baseball-bat-ball text-green"></i></div>
+              <div class="pillar-content">
+                <h4>Sports & Cricket Passion</h4>
+                <p>Enthusiastic cricket player who loves teamwork, active sports, and outdoor activities.</p>
+              </div>
+            </div>
+
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-camera-retro text-purple"></i></div>
+              <div class="pillar-content">
+                <h4>Photography & Media</h4>
+                <p>Enjoying photography, exploring mountain scenery, and inspired by creator Khazar Umar.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIFE, HOBBIES & PRECIOUS MOMENTS SECTION -->
+    <section id="life" class="section-padding bg-darker">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag"><i class="fa-solid fa-camera-retro"></i> LIFE & PASSIONS</div>
+          <h2 class="section-title">Beyond Classrooms: <span class="text-gradient">My Life & Moments</span></h2>
+          <p class="section-subtitle">Exploring nature, celebrating spiritual milestones, cricket sports, and cherishing family bonds.</p>
+        </div>
+
+        <div class="moments-grid">
+          
+          <!-- Card 1: Second Profile / Personal Focus -->
+          <div class="glass-card moment-card" data-reveal="fade-up" onclick="openImageModal('assets/secondProfileImage.jpeg', 'Personal Focus & Student Life', 'A 14-year-old student at KIPS School focused on academic excellence, sports, and building a bright future.')">
+            <div class="moment-img-wrapper">
+              <img src="assets/secondProfileImage.jpeg" alt="Muhammad Hasnain Profile" class="moment-img">
+              <span class="moment-badge"><i class="fa-solid fa-user-check text-cyan"></i> Focused Student</span>
+              <div class="moment-overlay"></div>
+              <div class="moment-expand-btn" title="View Enlarged Photo"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="moment-body">
+              <h3 class="moment-title"><i class="fa-solid fa-user text-cyan"></i> Personal Focus & Student Life</h3>
+              <p class="moment-desc">
+                A confident 14-year-old student at <strong>KIPS School</strong> who balances daily academics with sports, outdoor activities, and active participation in school events.
+              </p>
+              <div class="moment-tags">
+                <span class="mtag">8th Grade KIPS</span>
+                <span class="mtag">14 Yrs Male</span>
+                <span class="mtag">Academic Distinction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Favorite Content Creator Khazar Umar -->
+          <div class="glass-card moment-card" data-reveal="fade-up" data-delay="100" onclick="openImageModal('assets/khazar_umar.jpg', 'Favorite Creator: Khazar Umar', 'Inspired by Khazar Umar\'s creative storytelling, media production, and entertaining video content!')">
+            <div class="moment-img-wrapper">
+              <img src="assets/khazar_umar.jpg" alt="Khazar Umar Content Creator" class="moment-img">
+              <span class="moment-badge"><i class="fa-solid fa-video text-purple"></i> Favorite Creator</span>
+              <div class="moment-overlay"></div>
+              <div class="moment-expand-btn" title="View Enlarged Photo"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="moment-body">
+              <h3 class="moment-title"><i class="fa-solid fa-clapperboard text-purple"></i> Favorite Creator: Khazar Umar</h3>
+              <p class="moment-desc">
+                Greatly inspired by <strong>Khazar Umar</strong>, my absolute favorite content creator! Loving his creative videos, storytelling style, and cinematic media work.
+              </p>
+              <div class="moment-tags">
+                <span class="mtag">Khazar Umar Fan</span>
+                <span class="mtag">Cinematic Media</span>
+                <span class="mtag">Inspirational Content</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Nature & Mountain Exploring -->
+          <div class="glass-card moment-card" data-reveal="fade-up" data-delay="200" onclick="openImageModal('assets/simpleImageWithMountain.jpeg', 'Nature, Mountains & Photography', 'Exploring majestic mountains and nature. Photography and outdoors give me fresh energy and clear perspective.')">
+            <div class="moment-img-wrapper">
+              <img src="assets/simpleImageWithMountain.jpeg" alt="Hasnain Mountain Exploring" class="moment-img">
+              <span class="moment-badge"><i class="fa-solid fa-mountain text-green"></i> Mountain Exploring</span>
+              <div class="moment-overlay"></div>
+              <div class="moment-expand-btn" title="View Enlarged Photo"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="moment-body">
+              <h3 class="moment-title"><i class="fa-solid fa-compass text-green"></i> Nature, Photography & Exploring</h3>
+              <p class="moment-desc">
+                Loving outdoor exploration, photography, and hiking through majestic mountain scenery. Nature brings fresh energy, inspiration, and peace.
+              </p>
+              <div class="moment-tags">
+                <span class="mtag">Mountain Views</span>
+                <span class="mtag">Photography</span>
+                <span class="mtag">Cricket & Sports</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Holy Quran Completion (Blessing) -->
+          <div class="glass-card moment-card" data-reveal="fade-up" data-delay="300" onclick="openImageModal('assets/QuranMajeedHatamWithAbu&GrandFather.jpeg', 'Completion of Holy Quran (Hatam Celebration)', 'A deeply blessed spiritual milestone completing the recitation (Hatam) of the Holy Quran, celebrated with my respected Father and Grandfather.')">
+            <div class="moment-img-wrapper">
+              <img src="assets/QuranMajeedHatamWithAbu&GrandFather.jpeg" alt="Holy Quran Completion Hatam" class="moment-img">
+              <span class="moment-badge"><i class="fa-solid fa-book-quran text-gold"></i> Quran Hatam Celebration</span>
+              <div class="moment-overlay"></div>
+              <div class="moment-expand-btn" title="View Enlarged Photo"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="moment-body">
+              <h3 class="moment-title"><i class="fa-solid fa-star-and-crescent text-gold"></i> Completion of Holy Quran (Hatam)</h3>
+              <p class="moment-desc">
+                A memorable and spiritually blessed milestone completing the recitation (Hatam) of the Holy Quran, celebrated alongside my respected <strong>Father and Grandfather</strong>.
+              </p>
+              <div class="moment-tags">
+                <span class="mtag">Holy Quran Hatam</span>
+                <span class="mtag">Blessed Milestone</span>
+                <span class="mtag">With Abu & Grandfather</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Family & Brothers Bond -->
+          <div class="glass-card moment-card" data-reveal="fade-up" data-delay="400" onclick="openImageModal('assets/withBrothers.jpeg', 'Brothers & Family Strength', 'Precious moments with my brothers. Family is my ultimate support system, bringing joy, laughter, and unity to everything I pursue.')">
+            <div class="moment-img-wrapper">
+              <img src="assets/withBrothers.jpeg" alt="Hasnain with Brothers" class="moment-img">
+              <span class="moment-badge"><i class="fa-solid fa-people-roof text-cyan"></i> Brotherhood & Family</span>
+              <div class="moment-overlay"></div>
+              <div class="moment-expand-btn" title="View Enlarged Photo"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="moment-body">
+              <h3 class="moment-title"><i class="fa-solid fa-users text-cyan"></i> Brothers & Family Strength</h3>
+              <p class="moment-desc">
+                Treasured moments with my brothers. Family is my ultimate support system, bringing joy, laughter, mutual support, and unity to everything I pursue.
+              </p>
+              <div class="moment-tags">
+                <span class="mtag">Brothers Unity</span>
+                <span class="mtag">Family Support</span>
+                <span class="mtag">Shared Happiness</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STRENGTHS SECTION -->
+    <section id="skills" class="section-padding bg-darker">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag"><i class="fa-solid fa-trophy"></i> STRENGTHS & ABILITIES</div>
+          <h2 class="section-title">Academics, Sports & <span class="text-gradient">Personal Strengths</span></h2>
+          <p class="section-subtitle">A balanced overview of my school academic focus, athletic dedication in Cricket, and creative interests.</p>
+        </div>
+
+        <div class="skills-wrapper">
+          
+          <!-- Category 1: Academic Excellence -->
+          <div class="skill-category-box glass-card" data-reveal="fade-up" data-delay="100">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-graduation-cap text-cyan"></i></div>
+              <h3>KIPS School Academic Focus</h3>
+            </div>
+            
+            <div class="skill-bars-container">
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span>Mathematics & Problem Solving</span>
+                  <span>98%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 98%;"></div></div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span>General Science & Physics</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span>Quran Majeed & Islamic Studies</span>
+                  <span>98%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 98%;"></div></div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span>English Communication & Vocabulary</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Sports & Athletic Skills -->
+          <div class="skill-category-box glass-card" data-reveal="fade-up" data-delay="200">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-baseball-bat-ball text-green"></i></div>
+              <h3>Cricket & Athletic Strengths</h3>
+            </div>
+            
+            <div class="skill-bars-container">
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span>Cricket All-Rounder Ability</span>
+                  <span>96%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 96%;"></div></div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span>Team Leadership & Sportsmanship</span>
+                  <span>94%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 94%;"></div></div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span>Physical Agility & Outdoor Stamina</span>
+                  <span>92%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+              </div>
+
+              <div class="skill-bar-item">
+                <div class="skill-info">
+                  <span>Strategic Match Concentration</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Creative Hobbies & Interests Cloud -->
+          <div class="skill-category-box glass-card" data-reveal="fade-up" data-delay="300">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-heart text-purple"></i></div>
+              <h3>Hobbies & Interests</h3>
+            </div>
+            
+            <div class="tools-tag-cloud">
+              <div class="tool-tag"><i class="fa-solid fa-baseball-bat-ball text-green"></i> Cricket Matches</div>
+              <div class="tool-tag"><i class="fa-solid fa-camera-retro text-gold"></i> Nature Photography</div>
+              <div class="tool-tag"><i class="fa-solid fa-mountain text-cyan"></i> Mountain Scenery</div>
+              <div class="tool-tag"><i class="fa-solid fa-play text-red"></i> Khazar Umar Content</div>
+              <div class="tool-tag"><i class="fa-solid fa-users text-blue"></i> Family & Brothers</div>
+              <div class="tool-tag"><i class="fa-solid fa-book-open text-purple"></i> Quran Recitation</div>
+              <div class="tool-tag"><i class="fa-solid fa-medal text-gold"></i> School Competitions</div>
+              <div class="tool-tag"><i class="fa-solid fa-person-running text-green"></i> Outdoor Games</div>
+            </div>
+
+            <div class="learning-goal-box">
+              <span class="goal-tag">Current Goal 🎯</span>
+              <p>Achieving 1st Position in 8th Grade at KIPS School while excelling as a standout player in school Cricket matches!</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACTIVITIES SECTION -->
+    <section id="activities" class="section-padding">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag"><i class="fa-solid fa-star"></i> ACTIVITIES & HIGHLIGHTS</div>
+          <h2 class="section-title">My Favorite <span class="text-gradient">Activities & Passions</span></h2>
+          <p class="section-subtitle">Highlights of what keeps me active, inspired, and dedicated every day.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters" data-reveal="fade-up">
+          <button class="filter-btn active" data-filter="all">All Highlights</button>
+          <button class="filter-btn" data-filter="sports">Sports & Cricket</button>
+          <button class="filter-btn" data-filter="academics">Academic Success</button>
+          <button class="filter-btn" data-filter="hobbies">Hobbies & Media</button>
+        </div>
+
+        <!-- Activity Cards Grid -->
+        <div class="projects-grid">
+          
+          <!-- Activity 1 -->
+          <div class="project-card glass-card" data-category="sports" data-reveal="fade-up">
+            <div class="project-preview">
+              <div class="project-img-box">
+                <div class="cyber-screen-ui game-theme">
+                  <div class="screen-bar">
+                    <span class="screen-circle red"></span>
+                    <span class="screen-circle yellow"></span>
+                    <span class="screen-circle green"></span>
+                    <span class="screen-title">cricket-match-highlights.play</span>
+                  </div>
+                  <div class="screen-body">
+                    <i class="fa-solid fa-baseball-bat-ball screen-center-icon"></i>
+                    <span class="screen-badge">Cricket Favorite Sport</span>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">Sports Passion</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">Cricket</span>
+                <span class="ptag">Outdoor Games</span>
+                <span class="ptag">Teamwork</span>
+              </div>
+              <h3 class="project-title">Cricket Matches & Sportsmanship</h3>
+              <p class="project-desc">
+                Cricket is my top favorite sport. I love playing matches with friends, bowling, batting, and giving 100% effort on the sports field.
+              </p>
+              <div class="project-links">
+                <a href="#life" class="btn-proj-link btn-demo"><i class="fa-solid fa-images"></i> View Moments</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity 2 -->
+          <div class="project-card glass-card" data-category="academics" data-reveal="fade-up" data-delay="100">
+            <div class="project-preview">
+              <div class="project-img-box">
+                <div class="cyber-screen-ui school-theme">
+                  <div class="screen-bar">
+                    <span class="screen-circle red"></span>
+                    <span class="screen-circle yellow"></span>
+                    <span class="screen-circle green"></span>
+                    <span class="screen-title">kips-academic-excellence.edu</span>
+                  </div>
+                  <div class="screen-body">
+                    <i class="fa-solid fa-graduation-cap screen-center-icon"></i>
+                    <span class="screen-badge">Continuous 1st Position Topper</span>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">Academic Topper</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">KIPS School</span>
+                <span class="ptag">1st Position</span>
+                <span class="ptag">Topper</span>
+              </div>
+              <h3 class="project-title">Academic Distinction & Honors</h3>
+              <p class="project-desc">
+                Secured 1st Position continuously from Class 1 to Class 7. Currently focused on achieving top honors in 8th Class at KIPS School.
+              </p>
+              <div class="project-links">
+                <a href="#journey" class="btn-proj-link btn-demo"><i class="fa-solid fa-route"></i> See Journey</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity 3 -->
+          <div class="project-card glass-card" data-category="hobbies" data-reveal="fade-up" data-delay="200">
+            <div class="project-preview">
+              <div class="project-img-box">
+                <div class="cyber-screen-ui ai-theme">
+                  <div class="screen-bar">
+                    <span class="screen-circle red"></span>
+                    <span class="screen-circle yellow"></span>
+                    <span class="screen-circle green"></span>
+                    <span class="screen-title">mountain-nature-views.photo</span>
+                  </div>
+                  <div class="screen-body">
+                    <i class="fa-solid fa-mountain screen-center-icon"></i>
+                    <span class="screen-badge">Nature & Mountain Photography</span>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">Photography</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">Scenery</span>
+                <span class="ptag">Mountains</span>
+                <span class="ptag">Exploration</span>
+              </div>
+              <h3 class="project-title">Scenery & Mountain Photography</h3>
+              <p class="project-desc">
+                Exploring nature and capturing crisp photos of mountains, clear skies, and outdoor natural beauty during family trips.
+              </p>
+              <div class="project-links">
+                <a href="#life" class="btn-proj-link btn-demo"><i class="fa-solid fa-camera"></i> Photo Gallery</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Activity 4 -->
+          <div class="project-card glass-card" data-category="hobbies" data-reveal="fade-up" data-delay="300">
+            <div class="project-preview">
+              <div class="project-img-box">
+                <div class="cyber-screen-ui">
+                  <div class="screen-bar">
+                    <span class="screen-circle red"></span>
+                    <span class="screen-circle yellow"></span>
+                    <span class="screen-circle green"></span>
+                    <span class="screen-title">khazar-umar-inspiration.media</span>
+                  </div>
+                  <div class="screen-body">
+                    <i class="fa-solid fa-circle-play screen-center-icon"></i>
+                    <span class="screen-badge">Favorite Creator Khazar Umar</span>
+                  </div>
+                </div>
+              </div>
+              <span class="project-badge">Media Fan</span>
+            </div>
+
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag">Khazar Umar</span>
+                <span class="ptag">Content Creator</span>
+                <span class="ptag">Motivation</span>
+              </div>
+              <h3 class="project-title">Media & Creator Inspiration</h3>
+              <p class="project-desc">
+                Huge fan of Khazar Umar! I love watching his creative videos for motivation, quality media production, and positive energy.
+              </p>
+              <div class="project-links">
+                <a href="#life" class="btn-proj-link btn-demo"><i class="fa-solid fa-play"></i> Creator Card</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- JOURNEY & TIMELINE SECTION -->
+    <section id="journey" class="section-padding bg-darker">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag"><i class="fa-solid fa-route"></i> MY JOURNEY</div>
+          <h2 class="section-title">Education & <span class="text-gradient">Milestones</span></h2>
+          <p class="section-subtitle">How a 14-year-old student at KIPS School combines academic distinction with sports and hobbies.</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Timeline Item 1: 1st - 5th Grade -->
+          <div class="timeline-item left" data-reveal="fade-right">
+            <div class="timeline-node">
+              <i class="fa-solid fa-award text-gold"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Class 1 to Class 5 (Primary Education)</span>
+              <h3 class="timeline-title">Government Primary School No.2 Qadri Banda Hangu</h3>
+              <p class="timeline-desc">
+                Achieved <strong>Class Topper</strong> and <strong>1st Position Holder</strong> continuously from 1st Class through 5th Class, graduating as the top student of the school.
+              </p>
+              <div class="timeline-badge">🏆 1st-5th Grade Topper</div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: 6th - 7th Grade -->
+          <div class="timeline-item right" data-reveal="fade-left">
+            <div class="timeline-node">
+              <i class="fa-solid fa-medal text-cyan"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Class 6 to Class 7 (Middle Education)</span>
+              <h3 class="timeline-title">Government Middle School Qadri Banda Hangu</h3>
+              <p class="timeline-desc">
+                Maintained outstanding academic record, securing <strong>1st Position & Class Topper</strong> distinction throughout 6th and 7th Class.
+              </p>
+              <div class="timeline-badge">🏅 6th-7th Grade Topper</div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: 8th Grade @ KIPS -->
+          <div class="timeline-item left" data-reveal="fade-right">
+            <div class="timeline-node">
+              <i class="fa-solid fa-school text-blue"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Class 8 (Current)</span>
+              <h3 class="timeline-title">8th Class Student @ KIPS School</h3>
+              <p class="timeline-desc">
+                Currently studying in 8th Class at <strong>KIPS School</strong>, maintaining high dedication and aiming for top academic distinction in all subjects.
+              </p>
+              <div class="timeline-badge">🎓 Current Student @ KIPS</div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: Sports & Passions -->
+          <div class="timeline-item right" data-reveal="fade-left">
+            <div class="timeline-node">
+              <i class="fa-solid fa-baseball-bat-ball text-green"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Interests & Favorites</span>
+              <h3 class="timeline-title">Cricket, Photography & Khazar Umar</h3>
+              <p class="timeline-desc">
+                Passionate about playing <strong>Cricket</strong> (favorite sport), capturing nature through <strong>Photography</strong>, and inspired by favorite creator <strong>Khazar Umar</strong>.
+              </p>
+              <div class="timeline-badge">🏏 Cricket & Media Fan</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STUDENT MOTTO & BANNER SECTION -->
+    <section class="section-padding">
+      <div class="container">
+        
+        <div class="interactive-lab-card glass-card" data-reveal="zoom-in">
+          <div class="lab-glow"></div>
+          <div class="lab-content">
+            <span class="status-pill mb-3">🌟 Student Motto</span>
+            <h2 class="lab-title">Muhammad Hasnain's <span class="text-gradient">Life Philosophy</span></h2>
+            <p class="lab-desc">
+              "Success is built on consistent hard work in studies, devotion to Quran Majeed, strong family values, and staying active on the Cricket ground!"
+            </p>
+            <div class="lab-buttons">
+              <a href="https://wa.me/923359065274" target="_blank" rel="noopener" class="btn-primary-glow">
+                <i class="fa-brands fa-whatsapp text-green"></i>
+                <span>Connect on WhatsApp</span>
+              </a>
+              <a href="#life" class="btn-secondary-glass">
+                <i class="fa-solid fa-images"></i>
+                <span>Explore Life Moments</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section-padding bg-darker">
+      <div class="container">
+        
+        <div class="section-header" data-reveal="fade-up">
+          <div class="section-tag"><i class="fa-solid fa-envelope"></i> GET IN TOUCH</div>
+          <h2 class="section-title">Let's Connect & <span class="text-gradient">Collaborate</span></h2>
+          <p class="section-subtitle">Have a question, an exciting idea, or want to say hello? Drop a message below!</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-col" data-reveal="fade-right">
+            
+            <div class="glass-card contact-card">
+              <div class="c-icon"><i class="fa-brands fa-whatsapp text-green"></i></div>
+              <div>
+                <span class="c-label">Direct WhatsApp</span>
+                <a href="https://wa.me/923359065274" target="_blank" rel="noopener" class="c-value text-green">+92 335 9065274</a>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card">
+              <div class="c-icon"><i class="fa-solid fa-envelope text-cyan"></i></div>
+              <div>
+                <span class="c-label">Direct Email</span>
+                <a href="mailto:hasnainkkt39@gmail.com" class="c-value">hasnainkkt39@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card">
+              <div class="c-icon"><i class="fa-brands fa-github text-purple"></i></div>
+              <div>
+                <span class="c-label">GitHub Profile</span>
+                <a href="https://github.com/Iamhasnain56" target="_blank" rel="noopener" class="c-value">github.com/Iamhasnain56</a>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card">
+              <div class="c-icon"><i class="fa-solid fa-school text-blue"></i></div>
+              <div>
+                <span class="c-label">Institution</span>
+                <span class="c-value">KIPS School (8th Grade)</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-col glass-card" data-reveal="fade-left">
+            <h3 class="form-title">Send a Quick Message</h3>
+            
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="senderName"><i class="fa-solid fa-user"></i> Your Name</label>
+                <input type="text" id="senderName" class="form-control" placeholder="e.g. Ali Ahmed" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail"><i class="fa-solid fa-at"></i> Your Email</label>
+                <input type="email" id="senderEmail" class="form-control" placeholder="e.g. ali@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject"><i class="fa-solid fa-tag"></i> Subject</label>
+                <input type="text" id="senderSubject" class="form-control" placeholder="School project, advice, or collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderMessage"><i class="fa-solid fa-message"></i> Message</label>
+                <textarea id="senderMessage" class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary-glow w-100" id="submitBtn">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+
+            <div id="formSuccessMsg" class="form-success-banner hidden">
+              <i class="fa-solid fa-circle-check text-green"></i>
+              <span>Thank you! Your message has been simulated & recorded successfully. Hasnain will get back to you!</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-badge">MH</span>
+          <span class="logo-text">MUHAMMAD HASNAIN<span class="highlight-dot">.</span></span>
+        </a>
+        <p class="footer-tagline">14-Year-Old 8th Class Student @ KIPS School | Crafting the future one pixel at a time.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://wa.me/923359065274" target="_blank" rel="noopener" class="footer-social-icon" title="WhatsApp (+92 335 9065274)"><i class="fa-brands fa-whatsapp text-green"></i></a>
+        <a href="mailto:hasnainkkt39@gmail.com" class="footer-social-icon" title="Email: hasnainkkt39@gmail.com"><i class="fa-solid fa-envelope text-cyan"></i></a>
+        <a href="https://github.com/Iamhasnain56" target="_blank" rel="noopener" class="footer-social-icon" title="GitHub: Iamhasnain56"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 <strong>Muhammad Hasnain</strong>. All Rights Reserved. Hosted with ❤️ on GitHub Pages.</p>
+        <p class="footer-kips-tag">Proud Student of <strong>KIPS School</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTop" class="back-to-top-btn" aria-label="Back to Top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Interactive Image Lightbox Modal -->
+  <div class="modal-overlay" id="imageModal">
+    <div class="modal-container glass-card" style="max-width: 650px;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <i class="fa-solid fa-image text-cyan"></i>
+          <h3 id="lightboxTitle">Precious Moment</h3>
+        </div>
+        <button class="modal-close" onclick="closeImageModal()" aria-label="Close Lightbox">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <div style="width: 100%; height: 320px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.25rem; border: 1.5px solid var(--border-glow); box-shadow: 0 0 25px rgba(0, 240, 255, 0.2);">
+          <img id="lightboxImg" src="" alt="Enlarged Moment" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p id="lightboxDesc" style="color: var(--text-muted); font-size: 0.96rem; line-height: 1.6; margin-bottom: 1.25rem; text-align: left; background: rgba(5, 12, 34, 0.6); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-glass);"></p>
+        <div class="text-right">
+          <button class="btn-primary-glow btn-sm" onclick="closeImageModal()">Close Preview</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="toast-box">
+    <i class="fa-solid fa-bell toast-icon"></i>
+    <span id="toastMessage">Notification message</span>
+  </div>
+
+  <!-- Modular Scripts -->
+  <script src="js/typewriter.js"></script>
+  <script src="js/canvas-particles.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/scroll-effects.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
