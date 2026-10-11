@@ -23,11 +23,11 @@ function initTypewriter() {
 
   const roles = [
     '8th Grade Student @ KIPS School',
-    '14-Year-Old Tech Enthusiast',
-    'Front-End Web Creator',
-    'Future Software Engineer',
-    'Creative Thinker & Builder',
-    'Tech Explorer & Problem Solver'
+    'Continuous Class Topper & Position Holder 🏆',
+    'Fakhar Zaman Fan & Cricket Lover 🏏',
+    'Nature & Mountain Explorer 🏔️',
+    'Khazar Umar Fan & Media Lover 🎥',
+    '14-Year-Old Ambitious Learner'
   ];
 
   let roleIndex = 0;

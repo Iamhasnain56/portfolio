@@ -48,8 +48,11 @@
   <!-- Top Navigation Bar -->
   <header class="navbar-wrapper">
     <nav class="navbar" id="navbar">
-      <a href="#hero" class="brand-logo">
-        <span class="logo-badge">MH</span>
+      <a href="#hero" class="brand-logo" title="Muhammad Hasnain">
+        <div class="header-avatar-wrap">
+          <img src="assets/profile1.jpeg" alt="Muhammad Hasnain" class="header-avatar-img">
+          <span class="header-avatar-status" title="Online"></span>
+        </div>
         <span class="logo-text">HASNAIN<span class="highlight-dot">.</span></span>
       </a>
 
@@ -181,7 +184,7 @@
             
             <!-- Main Photo Wrapper -->
             <div class="photo-wrapper">
-              <img src="assets/profile.jpeg" alt="Muhammad Hasnain" class="profile-img" id="heroProfileImg">
+              <img src="assets/profile1.jpeg" alt="Muhammad Hasnain" class="profile-img" id="heroProfileImg">
               <div class="photo-overlay"></div>
               
               <!-- Scanline Cyber Effect -->
@@ -206,11 +209,14 @@
 
           <!-- Hero Photo Selector Thumbs -->
           <div class="hero-photo-selector" title="Switch Hero Photo View">
-            <div class="selector-thumb active" onclick="switchHeroPhoto('assets/profile.jpeg', this)" title="Main Profile">
-              <img src="assets/profile.jpeg" alt="Profile Main">
+            <div class="selector-thumb active" onclick="switchHeroPhoto('assets/profile1.jpeg', this)" title="Main Profile">
+              <img src="assets/profile1.jpeg" alt="Profile Main">
             </div>
-            <div class="selector-thumb" onclick="switchHeroPhoto('assets/secondProfileImage.jpeg', this)" title="Second Profile">
-              <img src="assets/secondProfileImage.jpeg" alt="Profile Second">
+            <div class="selector-thumb" onclick="switchHeroPhoto('assets/profile2.jpeg', this)" title="Formal Profile">
+              <img src="assets/profile2.jpeg" alt="Profile Formal">
+            </div>
+            <div class="selector-thumb" onclick="switchHeroPhoto('assets/profile3.jpeg', this)" title="Outdoor Profile">
+              <img src="assets/profile3.jpeg" alt="Profile Outdoor">
             </div>
           </div>
         </div>
@@ -242,7 +248,7 @@
           <div class="glass-card bio-card" data-reveal="fade-right">
             <div class="bio-header">
               <div class="bio-avatar-mini">
-                <img src="assets/profile.jpeg" alt="Muhammad Hasnain Mini">
+                <img src="assets/profile1.jpeg" alt="Muhammad Hasnain Mini">
               </div>
               <div>
                 <h3 class="bio-name">Muhammad Hasnain</h3>
@@ -254,7 +260,7 @@
               Hello! I am <strong>Muhammad Hasnain</strong>, a 14-year-old student studying in the <strong>8th Grade at KIPS School</strong>. I take immense pride in academic excellence, having achieved 1st position and top class topper honors throughout primary and middle school.
             </p>
             <p class="bio-paragraph">
-              When I am not studying my school syllabus or scoring top grades in science and mathematics, I spend my time actively participating in co-curricular activities, playing <strong>Cricket</strong> (my favorite sport), capturing nature through <strong>Photography</strong>, and watching my favorite content creator <strong>Khazar Umar</strong>!
+              When I am not studying my school syllabus or scoring top grades in science and mathematics, I spend my time actively participating in co-curricular activities, playing <strong>Cricket</strong> (favorite sport, huge fan of <strong>Fakhar Zaman</strong>), capturing nature through <strong>Photography</strong>, and watching my favorite content creator <strong>Khazar Umar</strong>!
             </p>
 
             <!-- Key Info List -->
@@ -282,6 +288,14 @@
               <div class="info-item">
                 <span class="info-key"><i class="fa-solid fa-baseball-bat-ball text-red"></i> Fav Sport:</span>
                 <span class="info-val">Cricket 🏏</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key"><i class="fa-solid fa-star text-green"></i> Fav Cricketer:</span>
+                <span class="info-val">Fakhar Zaman 🏏</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key"><i class="fa-solid fa-video text-purple"></i> Fav Creator:</span>
+                <span class="info-val">Khazar Umar 🎬</span>
               </div>
             </div>
 
@@ -363,10 +377,10 @@
 
         <div class="moments-grid">
           
-          <!-- Card 1: Second Profile / Personal Focus -->
-          <div class="glass-card moment-card" data-reveal="fade-up" onclick="openImageModal('assets/secondProfileImage.jpeg', 'Personal Focus & Student Life', 'A 14-year-old student at KIPS School focused on academic excellence, sports, and building a bright future.')">
+          <!-- Card 1: Formal Profile / Personal Focus -->
+          <div class="glass-card moment-card" data-reveal="fade-up" onclick="openImageModal('assets/profile2.jpeg', 'Personal Focus & Student Life', 'A 14-year-old student at KIPS School focused on academic excellence, sports, and building a bright future.')">
             <div class="moment-img-wrapper">
-              <img src="assets/secondProfileImage.jpeg" alt="Muhammad Hasnain Profile" class="moment-img">
+              <img src="assets/profile2.jpeg" alt="Muhammad Hasnain Formal Profile" class="moment-img">
               <span class="moment-badge"><i class="fa-solid fa-user-check text-cyan"></i> Focused Student</span>
               <div class="moment-overlay"></div>
               <div class="moment-expand-btn" title="View Enlarged Photo"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
@@ -384,10 +398,31 @@
             </div>
           </div>
 
-          <!-- Card 2: Favorite Content Creator Khazar Umar -->
-          <div class="glass-card moment-card" data-reveal="fade-up" data-delay="100" onclick="openImageModal('assets/khazar_umar.jpg', 'Favorite Creator: Khazar Umar', 'Inspired by Khazar Umar\'s creative storytelling, media production, and entertaining video content!')">
+          <!-- Card 2: Favorite Cricketer Fakhar Zaman -->
+          <div class="glass-card moment-card" data-reveal="fade-up" data-delay="100" onclick="openImageModal('assets/fakharZaman.jpg', 'Favorite Cricketer: Fakhar Zaman', 'My favorite cricket player is Fakhar Zaman! Passionate about his fearless batting, explosive match-winning knocks, and inspiring dedication to Pakistan Cricket.')">
             <div class="moment-img-wrapper">
-              <img src="assets/khazar_umar.jpg" alt="Khazar Umar Content Creator" class="moment-img">
+              <img src="assets/fakharZaman.jpg" alt="Fakhar Zaman Cricketer" class="moment-img">
+              <span class="moment-badge"><i class="fa-solid fa-baseball-bat-ball text-green"></i> Favorite Cricketer</span>
+              <div class="moment-overlay"></div>
+              <div class="moment-expand-btn" title="View Enlarged Photo"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="moment-body">
+              <h3 class="moment-title"><i class="fa-solid fa-baseball-bat-ball text-green"></i> Favorite Cricketer: Fakhar Zaman</h3>
+              <p class="moment-desc">
+                Cricket is my passion, and my absolute hero is <strong>Fakhar Zaman</strong>! His fearless attacking batting, big-stage centuries, and match-winning energy inspire me on and off the cricket pitch.
+              </p>
+              <div class="moment-tags">
+                <span class="mtag">Fakhar Zaman Fan</span>
+                <span class="mtag">Cricket Hero</span>
+                <span class="mtag">Aggressive Opener</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Favorite Content Creator Khazar Umar -->
+          <div class="glass-card moment-card" data-reveal="fade-up" data-delay="150" onclick="openImageModal('assets/khizarUmar.jpg', 'Favorite Creator: Khazar Umar', 'Inspired by Khazar Umar\'s creative storytelling, media production, and entertaining video content!')">
+            <div class="moment-img-wrapper">
+              <img src="assets/khizarUmar.jpg" alt="Khazar Umar Content Creator" class="moment-img">
               <span class="moment-badge"><i class="fa-solid fa-video text-purple"></i> Favorite Creator</span>
               <div class="moment-overlay"></div>
               <div class="moment-expand-btn" title="View Enlarged Photo"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
@@ -395,7 +430,7 @@
             <div class="moment-body">
               <h3 class="moment-title"><i class="fa-solid fa-clapperboard text-purple"></i> Favorite Creator: Khazar Umar</h3>
               <p class="moment-desc">
-                Greatly inspired by <strong>Khazar Umar</strong>, my absolute favorite content creator! Loving his creative videos, storytelling style, and cinematic media work.
+                Greatly inspired by <strong>Khazar Umar</strong>, my absolute favorite content creator! Loving his creative storytelling, cinematic vlogs, and entertaining positive content.
               </p>
               <div class="moment-tags">
                 <span class="mtag">Khazar Umar Fan</span>

@@ -9,7 +9,7 @@ function initTypewriter() {
   const roles = [
     '8th Grade Student @ KIPS School',
     'Continuous Class Topper & Position Holder 🏆',
-    'Cricket Enthusiast & Player 🏏',
+    'Fakhar Zaman Fan & Cricket Lover 🏏',
     'Nature & Mountain Explorer 🏔️',
     'Khazar Umar Fan & Media Lover 🎥',
     '14-Year-Old Ambitious Learner'
